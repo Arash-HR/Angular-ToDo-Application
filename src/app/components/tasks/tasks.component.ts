@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TasksComponent implements OnInit {
 
+  title: string = 'ToDo';
+  description: string = 'used to maintain our day-to-day tasks';
+
   constructor() { }
 
   ngOnInit(): void {
