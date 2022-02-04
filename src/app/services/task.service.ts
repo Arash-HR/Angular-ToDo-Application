@@ -25,4 +25,8 @@ export class TaskService {
     const url: string = `${this.apiurl}/${task.id}`;
     return this.http.put<Task>(url,task, httpOptions)
   }
+  deleteTask(task: Task): Observable<Task>{
+    const url: string = `${this.apiurl}/${task.id}`;
+    return this.http.delete<Task>(url)
+  }
 }

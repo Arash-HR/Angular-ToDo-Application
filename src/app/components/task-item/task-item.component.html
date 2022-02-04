@@ -18,7 +18,7 @@
             <button type="button" class="btn" *ngIf="task.done else taskStartAgain" [ngClass]="task.done ? 'btn-success' : 'btn-warning'" (click)="onDone(task)">Done</button>
             <ng-template #taskStartAgain>
                 <button type="button" class="btn" [ngClass]="task.done ? 'btn-success' : 'btn-warning'" (click)="onDone(task)">Do Again</button>
-                <button type="button" class="btn btn-danger">Delete</button>
+                <button type="button" class="btn btn-danger" (click)="onDelete(task)">Delete</button>
             </ng-template>
         </div>
     </div>
