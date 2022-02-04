@@ -8,7 +8,7 @@
                 <figcaption class="blockquote-footer mb-0">{{ description }}</figcaption>
             </figure>
             
-            <app-add-task style="margin: auto 0"></app-add-task>
+            <app-add-task style="margin: auto 0" (onAddTask)="addTask($event)"></app-add-task>
 
         </div>
         <div class="card-body text-start">

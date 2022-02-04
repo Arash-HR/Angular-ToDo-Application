@@ -12,18 +12,18 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form>
+            <form (ngSubmit)="onSubmit()">
                 <div class="mb-3">
                   <label for="taskTitle" class="form-label">Title</label>
-                  <input type="text" class="form-control" id="taskTitle">
+                  <input type="text" class="form-control" name="title" [(ngModel)]="title">
                 </div>
                 <div class="mb-3">
                     <label for="taskDescription" class="form-label">Description</label>
-                    <textarea class="form-control" id="taskDescription"></textarea>
+                    <textarea class="form-control" name="description" [(ngModel)]="description"></textarea>
                   </div>
                 <div class="mb-3">
                   <label for="taskDoDate" class="form-label">Do date</label>
-                  <input type="date" class="form-control" id="taskDoDate">
+                  <input type="date" class="form-control" name="date" [(ngModel)]="date">
                 </div>
                 
                 <button type="submit" class="btn btn-primary">Submit</button>

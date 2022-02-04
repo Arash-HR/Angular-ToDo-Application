@@ -29,4 +29,7 @@ export class TaskService {
     const url: string = `${this.apiurl}/${task.id}`;
     return this.http.delete<Task>(url)
   }
+  addTask(task: Task): Observable<Task>{
+    return this.http.post<Task>(this.apiurl, task, httpOptions);
+  }
 }
