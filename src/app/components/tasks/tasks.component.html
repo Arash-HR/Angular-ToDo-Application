@@ -14,7 +14,7 @@
         <div class="card-body text-start">
           
 
-            <app-task-item *ngFor="let task of tasks" [task]="task"></app-task-item>
+            <app-task-item *ngFor="let task of tasks" [task]="task" (onDoneTask)="doneTask(task)"></app-task-item>
 
 
         </div>

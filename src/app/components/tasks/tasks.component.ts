@@ -20,4 +20,9 @@ export class TasksComponent implements OnInit {
     this.taskService.getTask().subscribe((taks) => (this.tasks = taks));
   }
 
+  doneTask(task: Task){
+    task.done = !task.done;
+    this.taskService.doneTask(task).subscribe();
+  }
+
 }

@@ -9,13 +9,17 @@
     </div>
 </div> -->
 
-<div class="alert alert-primary p-0">
+<div class="alert p-0" [ngClass]="task.done ? 'alert-primary' : 'alert-secondary'">
     <h4 class="alert-heading m-3 mb-0">{{task.title}}</h4>
     <p class="m-3 mt-1">{{task.description}}</p>
     <div class="card-footer d-flex justify-content-between p-2">
         <p class="m-auto task-footer-date">Do Date: {{task.date}}</p>
         <div class="btn-group" role="group">
-            <button type="button" class="btn btn-success">Done</button>
+            <button type="button" class="btn" *ngIf="task.done else taskStartAgain" [ngClass]="task.done ? 'btn-success' : 'btn-warning'" (click)="onDone(task)">Done</button>
+            <ng-template #taskStartAgain>
+                <button type="button" class="btn" [ngClass]="task.done ? 'btn-success' : 'btn-warning'" (click)="onDone(task)">Do Again</button>
+                <button type="button" class="btn btn-danger">Delete</button>
+            </ng-template>
         </div>
     </div>
 </div>
