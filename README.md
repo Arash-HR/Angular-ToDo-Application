@@ -12,3 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Running json-server
 Run `npm run server` for run backend api with json-server.
+
+
+https://user-images.githubusercontent.com/51321390/153185845-f14b237a-561e-47e9-868a-8c206e356ba7.mp4
+
