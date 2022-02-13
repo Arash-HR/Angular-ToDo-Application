@@ -6,9 +6,11 @@
 
 # Installation
 
-## Development server
+## Getting started
+Run `npm install` for install dependencies.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Development server
+Run `ng serve` for a dev server. Navigate to `http://localhost:4000/`.
 
 ## Running json-server
 Run `npm run server` for run backend api with json-server.
