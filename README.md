@@ -10,7 +10,7 @@
 Run `npm install` for install dependencies.
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4000/`.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
 
 ## Running json-server
 Run `npm run server` for run backend api with json-server.
